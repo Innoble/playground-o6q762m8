@@ -4,7 +4,7 @@ Thanks to the creators for yet another great codingame contest. It was very orig
 
 I wasn't sure I was going to make legend, until I finally made my search work on thursday. And when I finally saw my bot enter the top 10 after coding some oven heuristics, I was really surprised. I usually make top 10, but this contest is by far the hardest I've been in. 
 
-In this post mortem I will try mainly to explain the things that are probably unique to my bot and/or interesting to read. My bot ended at 2.5k lines, so I can't go into every detail.
+In this post mortem I will try to explain the things that are probably unique to my bot and/or interesting to read. My bot ended at 2.5k lines, so I can't go into every detail.
 
 ## Contents
 
