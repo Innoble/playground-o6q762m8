@@ -26,7 +26,7 @@ I did this taking into account my own position, my partner position and the dest
 
 The array-lookup index for distances would be: 
 
-int index = myX + myY * 9 + hisX * 9 * 5 + hisY * 9 * 5 * 9 + destX * 9 * 5 * 9 * 5 + destX * 9 * 5 * 9 * 5 * 9;
+int index = myX + myY * 9 + hisX * 9 * 5 + hisY * 9 * 5 * 9 + destX * 9 * 5 * 9 * 5 + destY * 9 * 5 * 9 * 5 * 9;
 
 This also shows you why I made a smaller coordinate system for movement. It would give me a smaller array. 
 
