@@ -46,17 +46,17 @@ I tend to try and prematurely optimize, because there often isn't time to optimi
 ```C#
 public class GameState
 {
-    public GameState parent = null; // for debug purposes, to trace back a full list of actions, dont really need it
+    public GameState parent = null; // for debug purposes, to trace back a full list of actions, 
     public int myPlayer; // my position and item in a single integer
-    public int[] items = new int[39]; // all items on tables, this only needs 10 bits per item, 1 bit for each type
+    public int[] items = new int[39]; // all possible tableitems on tables, bitcoded, empty tables are 0
     public int[] recipes = new int[3]; // 1 bit for each item in the recipe, also contains the score
     public bool ovenPenaltyActive; // burning food isnt penalized if the partner has oven duty
-    public int myPlate; // which plate am I working on? Can be the one I am carrying (-1), one on table(index) or none (-2)
+    public int myPlate; // which plate am I working on? The one I carry?(-1), one on a table(index) or none(-2)
     public int firstAction // the root action i will eventually pick if this state is the best leaf
     public int lastAction; // the action of the previous depth level, for pruning purposes
     public int platesLeft; // how many plates in the dishwasher?
     public int score; // the evaluation score, to pick the best states in the beam
-    public int nextRecipe; // integer to use with the customer list, in case a recipe gets finished during search and you need more
+    public int nextRecipe; // integer to use with the customer list, in case a recipe gets finished 
     public int plateLastPutDown // the itemcode of the last plate you put down, for pruning purposes
     public int ovenInfo; // this holds the timer and the item in the oven
 
