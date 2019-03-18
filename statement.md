@@ -171,6 +171,8 @@ public static int GetItemCode(string content)
 
 If you look closely, you notice the lowest 6 items are all items that may appear in a recipe, making a recipe only need 6 bits. This way it is easy to do bit operations to see which items a plate needs to fill a recipe, or if a plate has items that shouldnt be there. 
 
+That's it. There's plenty more to tell, but I have to end it somewhere and I am tired. You can always ask me stuff in chat. See you at the next contest!
+
 
 
 
