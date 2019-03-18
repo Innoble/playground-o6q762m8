@@ -19,7 +19,7 @@ In this post mortem I will try to explain the things that are probably unique to
 
 ## Pathfinding
 
-In hindsight maybe not the best way, but I used two different coordinate systems. The movable part of the map is surrounded by a rectangle of squares you can't move into, so it makes sense to use a system that starts at 1,1 for movement. But the tables have different a different system. It didn't cause many issues for me, but I probably should have kept it simple.
+In hindsight maybe not the best way, but I used two different coordinate systems. The movable part of the map is surrounded by a rectangle of squares you can't move into, so it makes sense to use a system that starts at 1,1 for movement. But unfortunately the tables can't use this system, so you need to be careful when moving between the two systems. It didn't cause many issues for me, but I probably should have kept it simple.
 
 I fill several arrays, lists and dictionaries during the first second so I could always know the distance to every table from every square.
 I did this taking into account my own position, my partner position and the destination. I also made sure I could always look up which tables are adjacent to which square and which squares are adjacent to which tables. The array-lookup key for distances would be: 
