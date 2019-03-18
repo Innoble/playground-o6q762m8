@@ -1,4 +1,4 @@
-# Code a la Mode Rush Post Mortem
+# Code a la Mode Rush Mortem
 
 Thanks to the creators for yet another great codingame contest. It was very original for being the first contest that requires real cooperation. It was also very heuristics-friendly, which is good for many players. Personally I don't really like writing a heuristic bot so I went with beamsearch. I still required a ton of ifs to make things work and my code was very bloated. I ended 8th, which was far better than I thought I would, after playing around with the game for 2 days. 
 
