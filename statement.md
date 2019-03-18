@@ -10,7 +10,7 @@ In this post mortem I will try to explain the things that are probably unique to
 
 + #### Pathfinding
 + #### Beamsearch
-+ #### GameState
++ #### Gamestate
 + #### Move pruning
 + #### Recipe matching
 + #### Cooperation with your partner
