@@ -48,7 +48,7 @@ public class GameState
 {
     public GameState parent = null; // for debug purposes, to trace back a full list of actions, 
     public int myPlayer; // my position and item in a single integer
-    public int[] items = new int[39]; // all possible tableitems on tables, bitcoded, empty tables are 0
+    public int[] items = new int[39]; // all tableitems, bitcoded, empty tables are 0
     public int[] recipes = new int[3]; // 1 bit for each item in the recipe, also contains the score
     public bool ovenPenaltyActive; // burning food isnt penalized if the partner has oven duty
     public int myPlate; // which plate am I working on? The one I carry?(-1), one on a table(index) or none(-2)
